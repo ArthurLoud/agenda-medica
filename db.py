@@ -6,7 +6,7 @@ def conectar():
         host="localhost",
         user="root",
         password="1234",
-        database="agenda_db"
+        database="agendador_medico"
     )
 
 def agendar_consulta(paciente, medico_id, data, hora):
