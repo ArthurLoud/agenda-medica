@@ -64,7 +64,7 @@ def abrir_pagina_consultas(master):
         selecionado = lista_consultas.selection()
         if selecionado:
             consulta_id = lista_consultas.item(selecionado[0])['values'][0]
-            db.cancelar_consulta(consulta_id)
+            db.deletar_consulta(consulta_id)
             carregar_consultas()
             status_label.config(text="Consulta cancelada com sucesso.", bootstyle="danger")
 
